@@ -88,7 +88,7 @@ This account-level example shows how risk factors and signals can be translated 
 - A useful route in may be tech-focused PE firms, acquisitive software groups, or PE-backed platforms doing repeat bolt-on deals.
 - Lower and mid-market M&A boutiques may also be useful if they want a specialist partner to cover technical and product diligence gaps.
 - Sector focus matters: the proposition appears strongest for software, SaaS, AI, fintech, HR tech, and adjacent digital products rather than broad industrial or mixed portfolios.
-- Parliament may be a helpful conversation because it sits below the most operationally mature end of PE while still having relevant exposure.
+- Palamon may be a helpful conversation because it sits below the most operationally mature end of PE while still having relevant exposure.
 - Sabby also noted that some buyers will only value the offer if we make the commercial outcome obvious: better diligence, better preparation, better pricing leverage, or lower risk.
 
 ## Commercial Model Considerations
@@ -110,7 +110,7 @@ This account-level example shows how risk factors and signals can be translated 
 ## Suggested People To Speak To
 
 - No specific individual names were suggested for outreach in the conversation.
-- Sabby offered to help with introductions in M&A and suggested Parliament as a potentially relevant organisation to test the proposition with.
+- Sabby offered to help with introductions in M&A and suggested Palamon as a potentially relevant organisation to test the proposition with.
 
 ## Takeaways For Us
 
