@@ -107,8 +107,8 @@ const hasError = Astro.url.searchParams.get("error") === "1";
       <p class="eyebrow">Private research</p>
       <h1>Sign in to the library.</h1>
       <p>
-        Use the shared credentials to access the Oxford Growth research site. Once signed in,
-        your session will carry across the rest of the library.
+        Use the shared credentials to access the Lean Otter research repository. Once signed
+        in, your session will carry across the rest of the library.
       </p>
       {hasError && <p class="error">Those credentials didn’t work. Try again.</p>}
       <form method="post" action="/api/login/">
