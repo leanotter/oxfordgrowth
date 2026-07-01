@@ -35,6 +35,11 @@ const docs = sortDocs(
           {docs.map((doc) => (
             <a class="card interview-card" href={doc.url}>
               <h2 class="card-title card-title-large">{doc.title}</h2>
+              {(doc.jobTitle || doc.company) && (
+                <p class="role-line">
+                  {[doc.jobTitle, doc.company].filter(Boolean).join(", ")}
+                </p>
+              )}
               {doc.date && (
                 <p class="card-date">
                   <strong>{doc.date}</strong>

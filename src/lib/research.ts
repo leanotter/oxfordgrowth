@@ -112,11 +112,15 @@ const INTERVIEW_METADATA: Partial<
     jobTitle: "Founder",
     company: "The Drone Rules (TDR)",
   },
+  "oxford-growth/interviews/poppy-roworth": {
+    jobTitle: "Former COO",
+    company: "Arctoris",
+  },
   "private-equity/interviews/amir-qureshi": {
     jobTitle: "Independent PE and M&A adviser",
   },
   "private-equity/interviews/sabby-gill": {
-    jobTitle: "Product and technology leader",
+    jobTitle: "CEO",
     company: "Dext",
   },
 };

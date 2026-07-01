@@ -52,7 +52,12 @@ const { Content } = await render(doc.entry);
       </div>
     </header>
 
-    <div class="panel doc-content">
+    <div
+      class="panel doc-content"
+      data-doc-title={doc.title}
+      data-doc-job-title={doc.jobTitle ?? ""}
+      data-doc-date={doc.date ?? ""}
+    >
       {doc.hasTranscript && (
         <div class="content-toolbar">
           <div class="view-toggle" data-view-toggle>
@@ -138,7 +143,8 @@ const { Content } = await render(doc.entry);
         const copyButton = document.querySelector("[data-copy-transcript]");
         const copyLabel = document.querySelector("[data-copy-label]");
         const transcriptToolbar = document.querySelector("[data-transcript-toolbar]");
-        if (!notesView || !transcriptView || !source || !toggle) {
+        const docContent = document.querySelector(".doc-content");
+        if (!notesView || !transcriptView || !source || !toggle || !docContent) {
           return;
         }
 
@@ -303,13 +309,19 @@ const { Content } = await render(doc.entry);
 
         if (copyButton && copyLabel) {
           copyButton.addEventListener("click", async () => {
+            const title = docContent.getAttribute("data-doc-title")?.trim() ?? "";
+            const jobTitle = docContent.getAttribute("data-doc-job-title")?.trim() ?? "";
+            const date = docContent.getAttribute("data-doc-date")?.trim() ?? "";
             const transcriptText = transcriptView.innerText.replace(/^Copy transcript\s*/i, "").trim();
             if (!transcriptText) {
               return;
             }
 
+            const header = [title, jobTitle, date].filter(Boolean).join("\n");
+            const copyText = [header, transcriptText].filter(Boolean).join("\n\n");
+
             try {
-              await navigator.clipboard.writeText(transcriptText);
+              await navigator.clipboard.writeText(copyText);
               copyLabel.textContent = "Copied";
               window.setTimeout(() => {
                 copyLabel.textContent = "Copy transcript";
