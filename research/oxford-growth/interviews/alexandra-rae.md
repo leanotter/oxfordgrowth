@@ -2,8 +2,8 @@
 
 ## Meeting Details
 
-- **Date:** Jun 30
-- **Participants:** Brom Sulaiman, Alexandra Rae, Mike
+- **Date:** Jun 30, 2026
+- **Participants:** Brom Sulaiman, Alexandra Rae, Mike Bailey
 - **Meeting title:** 30 min with Brom (Alexandra Rae)
 
 ## Overview
@@ -137,7 +137,7 @@ What seemed most valuable to Alexandra was:
 ## Full Transcript
 
 Meeting Title: 30 min with Brom (Alexandra Rae)
-Date: Jun 30
+Date: Jun 30, 2026
 Meeting participants: Brom Sulaiman, Alex, Mike
 
 Transcript:

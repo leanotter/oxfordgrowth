@@ -2,7 +2,7 @@
 
 ## Meeting Details
 
-- **Date:** Jun 26
+- **Date:** Jun 26, 2026
 - **Participants:** Brom Sulaiman, Nathalie Sparrow, Mike Pytharidis
 - **Meeting title:** Oxford Growth Introduction- Nathalie/Brom & Mike
 
@@ -121,7 +121,7 @@ What seemed most valuable to Mike was:
 ## Full Transcript
 
 Meeting Title: Oxford Growth Introduction- Nathalie/Brom & Mike
-Date: Jun 26
+Date: Jun 26, 2026
 Meeting participants: Brom Sulaiman, Nathalie Sparrow, Mike Pytharidis
 
 Transcript:

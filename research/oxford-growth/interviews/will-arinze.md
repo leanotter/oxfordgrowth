@@ -2,8 +2,8 @@
 
 ## Meeting Details
 
-- **Date:** Jun 23
-- **Participants:** Brom Sulaiman, Mike, William Arinze
+- **Date:** Jun 23, 2026
+- **Participants:** Brom Sulaiman, Mike Bailey, William Arinze
 - **Meeting title:** Will Arinze <> Oxford Growth catchup
 
 ## Overview
@@ -111,7 +111,7 @@ What seemed most appealing to Will was:
 ## Full Transcript
 
 Meeting Title: Will Arinze <> Oxford Growth catchup
-Date: Jun 23
+Date: Jun 23, 2026
 Meeting participants: Brom Sulaiman, Mike, William
 
 Transcript:

@@ -2,7 +2,7 @@
 
 ## Meeting Details
 
-- **Date:** Jun 30
+- **Date:** Jun 30, 2026
 - **Participants:** Brom Sulaiman, Amir Qureshi
 - **Meeting title:** 30 min with Brom (Amir Qureshi)
 
@@ -114,7 +114,7 @@ His strongest commercial advice was that this market runs on relationships, refe
 ## Full Transcript
 
 Meeting Title: 30 min with Brom (Amir Qureshi)
-Date: Jun 30
+Date: Jun 30, 2026
 Meeting participants: Brom Sulaiman, Amir Qureshi
 
 Transcript:

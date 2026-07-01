@@ -1,0 +1,131 @@
+---
+import "@fontsource-variable/geist";
+const next = Astro.url.searchParams.get("next") ?? "/";
+const hasError = Astro.url.searchParams.get("error") === "1";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research Login</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f7f5;
+        --panel: #ffffff;
+        --ink: #1e1e1c;
+        --muted: #676763;
+        --line: #d9d9d4;
+        --accent: #2457a5;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: var(--bg);
+        color: var(--ink);
+        font-family:
+          "Geist Variable",
+          "Geist",
+          system-ui,
+          sans-serif;
+      }
+
+      .panel {
+        width: min(480px, calc(100vw - 32px));
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 32px;
+      }
+
+      .eyebrow {
+        margin: 0 0 8px;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: 1.85rem;
+        line-height: 1.05;
+      }
+
+      p {
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      form {
+        display: grid;
+        gap: 14px;
+        margin-top: 24px;
+      }
+
+      label {
+        display: grid;
+        gap: 8px;
+        font-weight: 400;
+      }
+
+      input {
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        padding: 0.8rem 0.9rem;
+        font: inherit;
+        background: white;
+      }
+
+      button {
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        padding: 0.8rem 1rem;
+        font: inherit;
+        background: var(--panel);
+        color: var(--ink);
+        cursor: pointer;
+      }
+
+      .error {
+        color: #9e2f13;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="panel">
+      <p class="eyebrow">Private research</p>
+      <h1>Sign in to the library.</h1>
+      <p>
+        Use the shared credentials to access the Oxford Growth research site. Once signed in,
+        your session will carry across the rest of the library.
+      </p>
+      {hasError && <p class="error">Those credentials didn’t work. Try again.</p>}
+      <form method="post" action="/api/login/">
+        <input type="hidden" name="next" value={next} />
+
+        <label>
+          Username
+          <input name="username" type="text" autocomplete="username" required />
+        </label>
+
+        <label>
+          Password
+          <input name="password" type="password" autocomplete="current-password" required />
+        </label>
+
+        <button type="submit">Enter research site</button>
+      </form>
+    </main>
+  </body>
+</html>
